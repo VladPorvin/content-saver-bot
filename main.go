@@ -3,12 +3,18 @@ package main
 import (
 	"flag"
 	"log"
+
+	"github.com/VladPorvin/content-saver-bot/telegram"
+)
+
+const (
+	tgBotHost = "api.telegram.org"
 )
 
 func main() {
 
 	// token = flags.Get(token)
-	// tgClient = telegram.New(token)
+	tgClient := telegram.New(tgBotHost, mustToken())
 	// fetcher := fetcher.New()
 	// processor := processor.New()
 
